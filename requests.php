@@ -1,6 +1,6 @@
 <?php
-$c1 =oci_connect("login", "pw", "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=NYPROD.oradb.ait.dtu.dk)(PORT=1521)))(CONNECT_DATA=(SID=NYPROD)(SERVER=DEDICATED)))", "WE8MSWIN1252", 0);
-/*$c1 =oci_connect("login", "pw", "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=NYITS.oradb.ait.dtu.dk)(PORT=1521)))(CONNECT_DATA=(SID=NYITS)(SERVER=DEDICATED)))", "WE8MSWIN1252", 0);*/
+$c1 =oci_connect("username", "pw", "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=NYPROD.oradb.ait.dtu.dk)(PORT=1521)))(CONNECT_DATA=(SID=NYPROD)(SERVER=DEDICATED)))", "WE8MSWIN1252", 0);
+/*$c1 =oci_connect("username", "pw", "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=NYITS.oradb.ait.dtu.dk)(PORT=1521)))(CONNECT_DATA=(SID=NYITS)(SERVER=DEDICATED)))", "WE8MSWIN1252", 0);*/
 
 function select_data($connname, $conn)
 {
